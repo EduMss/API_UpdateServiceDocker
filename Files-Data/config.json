@@ -1,0 +1,12 @@
+{
+ "configs" : [
+        {
+        "nome" : "8081",
+        "dirScript" : "scriptUpdate_8081.sh"
+	},
+        {
+        "nome" : "8084",
+        "dirScript" : "scriptUpdate_8084.sh"
+	}
+    ]
+}

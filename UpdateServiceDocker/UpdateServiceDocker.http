@@ -1,0 +1,7 @@
+@UpdateServiceDocker_HostAddress = http://localhost:5240 
+###http://192.168.0.249:5240
+
+GET {{UpdateServiceDocker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

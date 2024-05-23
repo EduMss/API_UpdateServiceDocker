@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gWU4meyRiE6oXV0V7wtfG/T7HUidKqjj/46vJubh3kY=",
+  "Source": "UpdateServiceDocker",
+  "BasePath": "_content/UpdateServiceDocker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
