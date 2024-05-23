@@ -26,15 +26,25 @@ Para executar o script pela api será precisa fazer uma requisição a via http 
 Para realizar essa requisição no Jenkins, deixei ele configurado para “Executar no comando do Windows” e usei o seguinte script: 
 
 @echo off 
+
 setlocal enabledelayedexpansion 
+
 :: Faz a requisição HTTP e armazena o código de status na variável 
+
 for /f "tokens=* delims=" %%i in ('curl --write-out "%%{http_code}" --silent --output NUL --request PUT --url http://192.168.0.111:8080/update/8081') do set "response=%%i" 
+
 :: Verifica se o código de status é diferente de 200 
+
 if "%response%" NEQ "200" ( 
+
     echo Erro na requisição: Código HTTP %response% 
+    
     exit /b 1 
+    
 ) else ( 
+
     echo Requisição bem-sucedida: Código HTTP %response% 
+    
 ) 
 
 
